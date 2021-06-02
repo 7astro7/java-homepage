@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="~{fragments/layout :: layout (~{::body},'index')}">
+
+    <head>
+        <meta charset="utf-8">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+    </head>
+
+<body>
+
+<div class="jumbotron">
+  <div class="container">
+    <a href="/" class="lang-logo">
+      <img src="/mypic.png" alt="Zak's Headshot">
+    </a>
+    <h1>
+        <strong>
+        Zak Kraehling
+        </strong>
+    </h1>
+    <h2>
+        <strong>
+        Software Engineer
+        </strong>
+    </h2>
+    <a type="button" class="btn btn-lg btn-default" href="#contact">
+        <strong>
+        <span></span> Contact
+        </strong>
+    </a>
+    <a type="button" class="btn btn-lg btn-default" href="https://github.com/7astro7">
+        <strong>
+            GitHub
+        </strong>
+    </a>
+    <a type="button" class="btn btn-lg btn-default" href="https://duckduckgo.com">
+        <strong>
+        <span class="glyphicon glyphicon-flash"></span> Download CV
+        </strong>
+    </a>
+  </div>
+</div>
+
+<section>
+    <article>
+        <div id="about">
+            <div class="about">
+                <h1>
+                    About Me
+                </h1>
+                <p>
+                I'm a nascent back end software engineer who uses pytest, JUnit, and criterion unit testing frameworks for
+                test-driven development. I use pandas, numpy, sklearn, psycopg2, scrapy, and selenium for data transformation and analysis. 
+                borgmatic is the main framework I rely on for backup software. I'm an enthusiast for all things Linux, risk, and math. My educational 
+                background is in data analytics and economics. I’m also the creator of full-fred, an open source Python API 
+                the Federal Reserve Bank of St. Louis recommends for accessing its databases.
+                </p>
+        </div>
+        </div>
+    </article>
+</section>
+
+<script>
+    var x = $(".about");
+    x.animate();
+    $("#about").animate();
+</script>
+
+<hr>
+<div class="row">
+</div>
+
+ <div id="div1">
+  <p id="p1">This is a paragraph.</p>
+  <p id="p2">This is another paragraph.</p>
+</div>
+
+<script>
+var para = document.createElement("p");
+var node = document.createTextNode("This is new.");
+para.appendChild(node);
+
+var element = document.getElementById("div1");
+var child = document.getElementById("p1");
+element.insertBefore(para, child);
+</script> 
+
+<hr>
+<div class="row">
+</div>
+
+<section>
+<div id="experience">
+    <div class="experience">
+        <div class="timeline">
+        <span>
+            <h1>
+                <strong>
+                    <span>
+                    Experience
+                    </span>
+                </strong>
+            </h1>
+            <h2>
+                The Ohio State University
+            </h2>
+            <h3>
+                Research Assistant, College of Arts & Sciences Department of Economics
+            </h3>
+            <h4>
+                Co-authored a research manuscript focused on asymmetry in transfer markets of over 3,000 NCAA football recruits spanning 14 years. Edited the manuscript and code, and shared findings of OLS and probit regression modelling results at the 2019 Eastern Economic Association Conference.
+            </h4>
+        </span>
+        </div>
+    </div>
+</div>
+</section>
+
+<hr>
+<div class="row">
+</div>
+
+<section id="timeline">
+  <article>
+    <div class="inner">
+      <span class="date">
+        <span class="month">Jan</span>
+        <span class="year">2014</span>
+      </span>
+      <h2>The Title</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis rutrum nunc, eget dictum massa. Nam faucibus felis nec augue adipiscing, eget commodo libero mattis.</p>
+    </div>
+  </article>
+  <article>
+    <div class="inner">
+      <span class="date">
+        <span class="day">26<sup>th</sup></span>
+        <span class="month">Jan</span>
+        <span class="year">2014</span>
+      </span>
+      <h2>The Title</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis rutrum nunc, eget dictum massa. Nam faucibus felis nec augue adipiscing, eget commodo libero mattis.</p>
+    </div>
+  </article>
+  <article>
+    <div class="inner">
+      <span class="date">
+        <span class="day">26<sup>th</sup></span>
+        <span class="month">Jan</span>
+        <span class="year">2014</span>
+      </span>
+      <h2>The Title</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis rutrum nunc, eget dictum massa. Nam faucibus felis nec augue adipiscing, eget commodo libero mattis.</p>
+    </div>
+  </article>
+  <article>
+    <div class="inner">
+      <span class="date">
+        <span class="day">26<sup>th</sup></span>
+        <span class="month">Jan</span>
+        <span class="year">2014</span>
+      </span>
+      <h2>The Title</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis rutrum nunc, eget dictum massa. Nam faucibus felis nec augue adipiscing, eget commodo libero mattis.</p>
+    </div>
+  </article>
+</section>
+
+<hr>
+<div class="row">
+</div>
+
+<div id="education">
+        <span>
+            <h1>
+                <strong>
+                    <span>
+                        Education
+                    </span>
+                </strong>
+            </h1>
+        </span>
+        <article>
+        <h2 class="heading">
+            Boston University
+        </h2>
+        <h3>
+            <span class="education-date">Sept 2019 - Present (Expected May 2022)</span>
+        </h3>
+        <h4>
+            Master of Science in Applied Data Analytics
+        </h4>
+        </article>
+        <h2 class="heading">
+            Ohio State University
+        </h2>
+        <h3>
+            <span class="education-date">Aug 2016 - May 2019</span>
+        </h3>
+        <h4>
+            Bachelor of Arts in Economics
+        </h4>
+        <ul>
+            <li>
+                Cum Laude
+            </li>
+            <li>
+                Cofounder and president of Sports Analytics Society
+            </li>
+        </ul>
+</div>
+
+<hr>
+<div class="row">
+</div> <!-- row -->
+
+<div id="projects">
+    <div class="projects">
+        <h1>
+            <strong>
+            Projects
+            </strong>
+        </h1>
+        <h2 class="heading">
+            full-fred
+        </h2>
+        <h3>
+            <span class="project-date">Feb 2021 - Present</span>
+        </h3>
+        <h4>
+            Created an open source Python HTTP API to Federal Reserve Economic Data (FRED). The
+            interface translates to Python 
+            <a href="https://fred.stlouisfed.org/docs/api/fred/">
+                100% of methods FRED Web Service supports 
+            </a>
+            as per its documentation and is available on 
+            <a href="https://pypi.org/project/full-fred/">
+                the Python Package Index.
+            </a>
+        </h4>
+        <h2>
+            HHS Selenium Bot
+        </h2>
+        <h3>
+            <span class="project-date">Nov 2020 - Mar 2021</span>
+        </h3>
+        <h4>
+            Created a 
+            <a href="https://github.com/7astro7/hhsBreaches">selenium firefox web scraper in Python</a>
+            that navigates to the U.S. H.H.S. archive of
+            medical data breaches affecting 500+ people, clicks JavaScript buttons, monitors download,
+            and closes. It removes zombie processes and reduces 100% of unit labor cost of manual
+            data retrieval.
+        </h4>
+    </div>
+</div>
+
+
+<hr>
+<div class="row">
+</div> <!-- row -->
+
+<div id="skills">
+    <div class="skills">
+            <h1>
+                <strong>
+                Skills
+                </strong>
+            </h1>
+                <p>Python</p>
+                <p>R</p>
+                <p>C</p>
+                <p>Java</p>
+                <p>Git</p>
+                <p>Linux</p>
+    </div>
+</div>
+
+<hr>
+<div class="row">
+</div> <!-- row -->
+
+<div id="volunteering">
+    <div class="volunteering">
+        <h1>
+            <strong>
+            Volunteer Experience
+            </strong>
+        </h1>
+        <h2>
+            FamilySearch
+        </h2>
+        <h3>
+            <span class="volunteering-role">Web Indexer</span>
+        </h3>
+        <h4>
+            <span class="volunteering-date">May 2021 - Present</span>
+        </h4>
+        <h5>
+            Parsed and transcribed 74 birth, probate, and naturalization legal records as 
+            part of FamilySearch's web indexing initiative to make historical legal records 
+            searchable online for FamilySearch users. 
+        </h5>
+    </div>
+</div>
+
+<hr>
+<div class="row">
+</div> <!-- row -->
+
+<section>
+<div id="contact">
+    <div class="contact">
+    <h1>
+        <strong>
+        Get in touch
+        </strong>
+    </h1>
+    <div id="contact-form">
+    <form method="POST" action="https://formspree.io/email@email.com">
+        <ul>
+            <li>
+                <label for="first_name">
+                    First Name: 
+                </label>
+                <input type="text" id="first_name" name="user_first_name" placeholder="First Name"/>
+            </li>
+            <li>
+                <label for="last_name">
+                    Last Name: 
+                </label>
+                <input type="text" id="last_name" name="user_last_name" placeholder="Last Name"/>
+            </li>
+            <li>
+                <input type="hidden" name="_subject" value="Contact request from personal website" />
+            </li>
+            <li>
+                <label for="email">
+                    Email: 
+                </label>
+                <input type="email" name="_replyto" placeholder="Your email" required />
+            </li>
+            <li>
+                <label for="message">
+                    Message: 
+                </label>
+                <textarea name="message" placeholder="Your message" required/></textarea>
+            </li>
+            <li>
+            <button type="submit">
+                Send
+            </button>
+            </li>
+        </ul>
+    </form>
+    </div>
+</div>
+</div>
+</section>
+
+<hr>
+<div class="row">
+</div> <!-- row -->
+
+<footer style="height:auto; color:white; padding-bottom:20px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-5 copyright">
+                <p>
+                Copyright &copy; 2021 Zachary A. Kraehling
+                </p>
+            </div>
+            <div class="col-sm-5 social">
+                <ul>
+                    <li>
+                        <a href="https://github.com/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<div id ="container">
+  <div id ="animate"></div>
+</div>
+
+<script>
+var id = null;
+function myMove() {
+  var elem = document.getElementById("animate");   
+  var pos = 0;
+  clearInterval(id);
+  id = setInterval(frame, 5);
+  function frame() {
+    if (pos == 350) {
+      clearInterval(id);
+    } else {
+      pos++; 
+      elem.style.top = pos + "px"; 
+      elem.style.left = pos + "px"; 
+    }
+  }
+}
+    function myFunction() {
+                            document.getElementByClassName("about").innerHTML = "33300011";
+                        }
+        </script>
+
+</body>
+</html>
